@@ -1,0 +1,471 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AMPAM Consular Court – De Jure Consular Jurisdiction</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              black: '#0B0B0B',
+              ink:   '#111111',
+              gold:  '#CFAE2C',
+              blue:  '#0A3D91',
+              white: '#FFFFFF'
+            }
+          },
+          fontFamily: {
+            display: ['Cinzel','serif'],
+            sans: ['Inter','ui-sans-serif','system-ui']
+          },
+          boxShadow: {
+            soft: '0 10px 24px rgba(0,0,0,.25)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+  <style>
+    .nav-link{ position:relative }
+    .nav-link[aria-current="page"]::after{
+      content:""; position:absolute; left:0; right:0; bottom:-10px; height:3px;
+      background:#CFAE2C; border-radius:2px;
+    }
+    @media print {
+      header, nav, .no-print { display:none !important; }
+      body { background:#fff !important; color:#000 !important; }
+      main { padding:0 !important; }
+    }
+  </style>
+</head>
+
+<body class="bg-brand-black text-brand-white font-sans min-h-screen flex flex-col">
+  <!-- Masthead -->
+  <header class="bg-brand-black sticky top-0 z-40 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-center">
+      <h1 class="font-display font-black text-3xl sm:text-4xl text-brand-gold tracking-wide">
+        Allodium Moroccan Praedium Anti Michigan
+      </h1>
+      <p class="text-sm sm:text-base text-white/80 mt-1">AMPAM Consular Court – De Jure Consular Jurisdiction</p>
+      <div class="mt-3 flex items-center justify-center gap-3">
+        <img src="https://huggingface.co/spaces/AmpamMofaRayel/consular-caseflow-nexus/resolve/main/images/AMPAM%20SEAL.png"
+             alt="AMPAM Seal" class="h-12 w-12 rounded-full ring-2 ring-brand-gold/60 shadow-soft object-contain">
+        <img src="https://huggingface.co/spaces/AmpamMofaRayel/consular-caseflow-nexus/resolve/main/images/AMPAM%20CONSULAR%20COURT%20SEAL.png"
+             alt="AMPAM Consular Court Seal" class="h-12 w-12 rounded-full ring-2 ring-brand-gold/60 shadow-soft object-contain">
+      </div>
+    </div>
+
+    <!-- Nav -->
+    <nav class="bg-brand-black/80 backdrop-blur border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <ul id="nav" class="flex gap-6 overflow-x-auto py-3">
+          <li><a class="nav-link hover:text-brand-gold transition" href="#/">Home</a></li>
+          <li><a class="nav-link hover:text-brand-gold transition" href="#/docket">Docket</a></li>
+          <li><a class="nav-link hover:text-brand-gold transition" href="#/file">File Case</a></li>
+          <li><a class="nav-link hover:text-brand-gold transition" href="#/decree">Issue Decree</a></li>
+          <li><a class="nav-link hover:text-brand-gold transition" href="#/verify">Verify</a></li>
+          <li><a class="nav-link hover:text-brand-gold transition" href="#/treaties">Treaties</a></li>
+          <li><a class="nav-link hover:text-brand-gold transition" href="#/contacts">Contacts</a></li>
+          <li class="ml-auto"><a class="nav-link hover:text-brand-gold transition" href="#/admin">Admin</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-10 grow">
+    <!-- HOME -->
+    <section class="route" data-route="/">
+      <div class="relative overflow-hidden rounded-2xl border border-white/10">
+        <img src="https://huggingface.co/spaces/AmpamMofaRayel/consular-caseflow-nexus/resolve/main/images/AMPAM%20CONSULAR%20COURT%20SEAL.png"
+             alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover opacity-10">
+        <div class="relative p-10 sm:p-14 text-center">
+          <h2 class="font-display text-4xl sm:text-5xl tracking-wide">Consular Jurisdiction &amp; Sovereignty</h2>
+          <p class="text-white/85 mt-4 max-w-2xl mx-auto">Exercising de jure authority under international treaty law and common law principles.</p>
+          <div class="mt-8 flex justify-center gap-4 no-print">
+            <a href="#/file" class="px-5 py-3 rounded-xl bg-brand-blue text-white font-semibold shadow-soft hover:opacity-90">File a Case</a>
+            <a href="#/verify" class="px-5 py-3 rounded-xl border border-brand-gold text-brand-gold font-semibold hover:bg-white/5">Verify Document</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature cards -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+        <div class="rounded-2xl bg-brand-blue p-6 shadow-soft border border-white/10">
+          <div class="w-10 h-10 rounded-full bg-brand-gold/90 mb-4"></div>
+          <h3 class="font-display text-xl mb-2">Case Management</h3>
+          <p class="text-white/90">File, track, and manage all consular court matters in a secure digital registry.</p>
+        </div>
+        <div class="rounded-2xl bg-brand-blue p-6 shadow-soft border border-white/10">
+          <div class="w-10 h-10 rounded-full bg-brand-gold/90 mb-4"></div>
+          <h3 class="font-display text-xl mb-2">Document Verification</h3>
+          <p class="text-white/90">Cryptographically verify the authenticity of any court document or decree.</p>
+        </div>
+        <div class="rounded-2xl bg-brand-blue p-6 shadow-soft border border-white/10">
+          <div class="w-10 h-10 rounded-full bg-brand-gold/90 mb-4"></div>
+          <h3 class="font-display text-xl mb-2">Decree Issuance</h3>
+          <p class="text-white/90">Generate official decrees with embedded verification codes and QR signatures.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCKET -->
+    <section class="route hidden" data-route="/docket">
+      <h2 class="font-display text-3xl mb-6">Docket</h2>
+      <div class="flex gap-3">
+        <input id="search" class="bg-brand-ink border border-white/10 rounded-lg px-3 py-2" placeholder="Search…">
+        <button id="exportBtn" class="px-4 py-2 rounded-lg border border-brand-gold text-brand-gold hover:bg-white/5">Export JSON</button>
+        <label class="px-4 py-2 rounded-lg bg-brand-blue text-white cursor-pointer">Import
+          <input type="file" id="importInput" accept="application/json" class="hidden">
+        </label>
+      </div>
+      <div class="mt-6 overflow-x-auto rounded-xl border border-white/10">
+        <table class="min-w-full text-sm">
+          <thead class="bg-white/5">
+            <tr>
+              <th class="px-4 py-3 text-left">Case ID</th>
+              <th class="px-4 py-3 text-left">Title</th>
+              <th class="px-4 py-3 text-left">Filer</th>
+              <th class="px-4 py-3 text-left">Type</th>
+              <th class="px-4 py-3 text-left">Status</th>
+              <th class="px-4 py-3 text-left">Created</th>
+            </tr>
+          </thead>
+          <tbody id="docketBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- FILE -->
+    <section class="route hidden" data-route="/file">
+      <h2 class="font-display text-3xl mb-6">File a Case</h2>
+      <form id="caseForm" class="grid sm:grid-cols-2 gap-6 max-w-3xl">
+        <div><label class="block mb-1">Party Filing</label><input required name="filerName" class="w-full bg-brand-ink border border-white/10 rounded-lg px-3 py-2"></div>
+        <div><label class="block mb-1">Role</label>
+          <select name="filerRole" class="w-full bg-brand-ink border border-white/10 rounded-lg px-3 py-2">
+            <option>Executor</option><option>Trustee</option><option>Beneficiary</option><option>Consul</option><option>Other</option>
+          </select>
+        </div>
+        <div class="sm:col-span-2"><label class="block mb-1">Respondent</label><input name="respondent" class="w-full bg-brand-ink border border-white/10 rounded-lg px-3 py-2"></div>
+        <div class="sm:col-span-2"><label class="block mb-1">Case Title</label><input required name="title" class="w-full bg-brand-ink border border-white/10 rounded-lg px-3 py-2"></div>
+        <div><label class="block mb-1">Case Type</label>
+          <select name="caseType" class="w-full bg-brand-ink border border-white/10 rounded-lg px-3 py-2">
+            <option>Affidavit</option><option>BillOfExchange</option><option>Lien</option><option>TreatyEnforcement</option><option>Notice</option><option>DecreeRequest</option>
+          </select>
+        </div>
+        <div><label class="block mb-1">Amount (USD)</label><input type="number" step="0.01" name="amount" class="w-full bg-brand-ink border border-white/10 rounded-lg px-3 py-2"></div>
+        <div><label class="block mb-1">Filed Date</label><input type="date" name="filedDate" class="w-full bg-brand-ink border border-white/10 rounded-lg px-3 py-2"></div>
+        <div><label class="block mb-1">Incident Date</label><input type="date" name="incidentDate" class="w-full bg-brand-ink border border-white/10 rounded-lg px-3 py-2"></div>
+        <div class="sm:col-span-2"><label class="inline-flex items-center gap-2">
+          <input type="checkbox" required class="accent-brand-blue"><span class="text-white/80">I declare under 28 U.S.C. § 1746 that the foregoing is true and correct.</span>
+        </label></div>
+        <div class="sm:col-span-2 flex gap-3">
+          <button class="px-5 py-3 rounded-xl bg-brand-blue text-white font-semibold">Submit Case</button>
+          <a href="#/docket" class="px-5 py-3 rounded-xl border border-brand-gold text-brand-gold font-semibold hover:bg-white/5">View Docket</a>
+        </div>
+      </form>
+    </section>
+
+    <!-- DECREE -->
+    <section class="route hidden" data-route="/decree">
+      <h2 class="font-display text-3xl mb-6">Issue Decree</h2>
+      <div class="grid sm:grid-cols-2 gap-6 max-w-3xl">
+        <div><label class="block mb-1">Case ID</label><input id="decCaseId" class="w-full bg-brand-ink border border-white/10 rounded-lg px-3 py-2" placeholder="AMPAM-CC-YYYYMMDD-0001"></div>
+        <div><label class="block mb-1">Effective Date</label><input id="decDate" type="date" class="w-full bg-brand-ink border border-white/10 rounded-lg px-3 py-2"></div>
+        <div class="sm:col-span-2"><label class="block mb-1">Findings</label><textarea id="decFindings" rows="4" class="w-full bg-brand-ink border border-white/10 rounded-lg px-3 py-2"></textarea></div>
+        <div class="sm:col-span-2"><label class="block mb-1">Orders</label><textarea id="decOrders" rows="4" class="w-full bg-brand-ink border border-white/10 rounded-lg px-3 py-2"></textarea></div>
+        <div class="sm:col-span-2"><button id="genDecree" class="px-5 py-3 rounded-xl bg-brand-blue text-white font-semibold">Generate Print View</button></div>
+      </div>
+      <div id="decreePreview" class="mt-8 hidden bg-white text-black rounded-xl p-8"></div>
+    </section>
+
+    <!-- VERIFY -->
+    <section class="route hidden" data-route="/verify">
+      <h2 class="font-display text-3xl mb-4">Verify</h2>
+      <textarea id="verifyInput" rows="4" class="w-full max-w-3xl bg-brand-ink border border-white/10 rounded-lg px-3 py-2 mt-4" placeholder='{"v":1,"id":"AMPAM-CC-...","hash":"...","ts":"..."}'></textarea>
+      <div class="mt-4 flex gap-3">
+        <button id="verifyBtn" class="px-5 py-3 rounded-xl bg-brand-blue text-white font-semibold">Verify</button>
+        <label class="px-5 py-3 rounded-xl border border-brand-gold text-brand-gold font-semibold cursor-pointer">Upload JSON
+          <input type="file" id="verifyFile" accept="application/json" class="hidden">
+        </label>
+      </div>
+      <div id="verifyResult" class="mt-6"></div>
+    </section>
+
+    <!-- TREATIES -->
+    <section class="route hidden" data-route="/treaties">
+      <h2 class="font-display text-3xl mb-6">Treaties Library</h2>
+      <ul class="space-y-4">
+        <li class="bg-brand-ink border border-white/10 rounded-xl p-4">
+          <h3 class="font-display text-xl">Treaty of Peace &amp; Friendship (1786/1836)</h3>
+          <p class="text-white/70">Foundational treaty; pacta sunt servanda.</p>
+        </li>
+        <li class="bg-brand-ink border border-white/10 rounded-xl p-4">
+          <h3 class="font-display text-xl">Treaty of Madrid (1880)</h3>
+          <p class="text-white/70">Consular protections and commercial provisions.</p>
+        </li>
+        <li class="bg-brand-ink border border-white/10 rounded-xl p-4">
+          <h3 class="font-display text-xl">General Act of Algeciras (1906)</h3>
+          <p class="text-white/70">Administrative and fiscal matters concerning Morocco.</p>
+        </li>
+        <li class="bg-brand-ink border border-white/10 rounded-xl p-4">
+          <h3 class="font-display text-xl">Vienna Convention on Consular Relations (1963)</h3>
+          <p class="text-white/70">Baseline for consular functions and immunities.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CONTACTS -->
+    <section class="route hidden" data-route="/contacts">
+      <h2 class="font-display text-3xl mb-6">Contacts</h2>
+      <div id="contactsList" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+      <button id="addContact" class="mt-6 px-5 py-3 rounded-xl bg-brand-blue text-white font-semibold">Add Contact</button>
+    </section>
+
+    <!-- ADMIN -->
+    <section class="route hidden" data-route="/admin">
+      <h2 class="font-display text-3xl mb-6">Admin</h2>
+      <div class="grid sm:grid-cols-2 gap-6 max-w-3xl">
+        <div><label class="block mb-1">Set Admin Passphrase</label><input id="adminPass" type="password" class="w-full bg-brand-ink border border-white/10 rounded-lg px-3 py-2"></div>
+        <div><label class="block mb-1">HMAC Secret (optional)</label><input id="hmacSecret" type="password" class="w-full bg-brand-ink border border-white/10 rounded-lg px-3 py-2"></div>
+        <div class="sm:col-span-2 flex gap-3">
+          <button id="saveAdmin" class="px-5 py-3 rounded-xl bg-brand-blue text-white font-semibold">Save</button>
+          <button id="clearAll" class="px-5 py-3 rounded-xl border border-red-400 text-red-400">Clear All Local Data</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center text-white/60 py-10">© <span id="yr"></span> AMPAM Consular Court</footer>
+
+  <!-- App script -->
+  <script type="module">
+    // ---- Utilities & storage
+    const $ = s => document.querySelector(s);
+    const $$ = s => Array.from(document.querySelectorAll(s));
+    const store = {
+      key: 'ampam:docket:v1',
+      load(){ try{ return JSON.parse(localStorage.getItem(this.key)||'[]'); }catch{ return []; } },
+      save(v){ localStorage.setItem(this.key, JSON.stringify(v)); }
+    };
+    const settings = {
+      key: 'ampam:settings:v1',
+      load(){ try{ return JSON.parse(localStorage.getItem(this.key)||'{}'); }catch{ return {}; } },
+      save(v){ localStorage.setItem(this.key, JSON.stringify(v)); }
+    };
+
+    function caseId(){
+      const d=new Date(), ymd=d.toISOString().slice(0,10).replace(/-/g,'');
+      const n=String(Math.floor(Math.random()*10000)).padStart(4,'0');
+      return `AMPAM-CC-${ymd}-${n}`;
+    }
+    async function sha256Hex(text){
+      const enc=new TextEncoder().encode(text);
+      const buf=await crypto.subtle.digest('SHA-256', enc);
+      return [...new Uint8Array(buf)].map(b=>b.toString(16).padStart(2,'0')).join('');
+    }
+
+    // ---- Router (robust for GitHub Pages)
+    const routes = new Map($$('.route').map(sec => [sec.dataset.route, sec]));
+    function normalizeHash(){
+      let h=(location.hash||'#/').replace(/^#/, '');
+      if(!h || h==='/' || h==='#') return '/';
+      if(!h.startsWith('/')) h='/'+h;
+      return h.split('?')[0];
+    }
+    function show(route){
+      if(!routes.has(route)) route='/';
+      routes.forEach((el,r)=> el.classList.toggle('hidden', r!==route));
+      $$('#nav a').forEach(a=>{
+        const target=(a.getAttribute('href')||'').replace(/^#/, '');
+        const active=(target===route) || (route==='/' && (target==='/'||target===''));
+        if(active) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current');
+      });
+      localStorage.setItem('ampam:lastRoute', route);
+      if(route==='/docket') renderDocket();
+      if(route==='/contacts') renderContacts();
+    }
+    function resolveRoute(){ show(normalizeHash()); }
+    window.addEventListener('hashchange', resolveRoute);
+    window.addEventListener('DOMContentLoaded', ()=>{
+      if(!location.hash){
+        const last=localStorage.getItem('ampam:lastRoute');
+        if(last && routes.has(last)) location.hash='#'+last;
+      }
+      resolveRoute();
+    });
+
+    // ---- Docket
+    function renderDocket(){
+      const q=($('#search')?.value||'').toLowerCase();
+      const body=$('#docketBody'); body.innerHTML='';
+      const list=store.load()
+        .filter(c=>!q || JSON.stringify(c).toLowerCase().includes(q))
+        .sort((a,b)=>(b.createdAt||'').localeCompare(a.createdAt||''));
+      if(list.length===0){ body.innerHTML='<tr><td colspan="6" class="px-4 py-6 text-center text-white/60">No cases yet.</td></tr>'; return; }
+      for(const c of list){
+        const tr=document.createElement('tr');
+        tr.className='border-t border-white/10 hover:bg-white/5 cursor-pointer';
+        tr.innerHTML=`
+          <td class="px-4 py-3">${c.caseId}</td>
+          <td class="px-4 py-3">${c.title||''}</td>
+          <td class="px-4 py-3">${c.filerName||''}</td>
+          <td class="px-4 py-3">${c.caseType||''}</td>
+          <td class="px-4 py-3">${c.status||'Open'}</td>
+          <td class="px-4 py-3">${(c.createdAt||'').slice(0,10)}</td>`;
+        tr.addEventListener('click', ()=>{ $('#decCaseId').value=c.caseId; location.hash='#/decree'; });
+        body.appendChild(tr);
+      }
+    }
+    $('#search')?.addEventListener('input', renderDocket);
+    $('#exportBtn')?.addEventListener('click', ()=>{
+      const blob=new Blob([JSON.stringify(store.load(),null,2)],{type:'application/json'});
+      const url=URL.createObjectURL(blob);
+      const a=Object.assign(document.createElement('a'),{href:url,download:'ampam-docket.json'});
+      document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+    });
+    $('#importInput')?.addEventListener('change', async e=>{
+      const f=e.target.files?.[0]; if(!f) return;
+      try{ const data=JSON.parse(await f.text()); if(Array.isArray(data)){ store.save(data); renderDocket(); } }catch{}
+    });
+
+    // ---- File a Case
+    $('#caseForm')?.addEventListener('submit', async e=>{
+      e.preventDefault();
+      const fd=new FormData(e.target);
+      const rec={
+        caseId: caseId(),
+        title: fd.get('title')?.toString()||'',
+        filerName: fd.get('filerName')?.toString()||'',
+        filerRole: fd.get('filerRole')?.toString()||'',
+        respondent: fd.get('respondent')?.toString()||'',
+        caseType: fd.get('caseType')?.toString()||'',
+        amountCents: Math.round(parseFloat(fd.get('amount')||'0')*100)||0,
+        filedDate: fd.get('filedDate')||'',
+        incidentDate: fd.get('incidentDate')||'',
+        status: 'Open',
+        createdAt: new Date().toISOString()
+      };
+      const canon=JSON.stringify(Object.keys(rec).sort().reduce((o,k)=>(o[k]=rec[k],o),{}));
+      rec.hashHex=await sha256Hex(canon);
+      const list=store.load(); list.push(rec); store.save(list);
+      e.target.reset(); location.hash='#/docket';
+    });
+
+    // ---- Decree preview
+    $('#genDecree')?.addEventListener('click', ()=>{
+      const id=$('#decCaseId').value.trim();
+      if(!id){ alert('Enter Case ID'); return; }
+      const d=store.load().find(c=>c.caseId===id);
+      const findings=$('#decFindings').value.trim()||'The Court finds sufficient cause under treaty and common law.';
+      const orders=$('#decOrders').value.trim()||'It is ordered and decreed as set forth herein.';
+      const eff=$('#decDate').value||new Date().toISOString().slice(0,10);
+      const hash=d?.hashHex||'—';
+      const html=`
+        <div class="max-w-3xl mx-auto">
+          <h3 class="text-center font-display text-2xl">CONSULAR DECREE</h3>
+          <p class="text-center mt-1 text-sm">AMPAM Consular Court — Allodium Moroccan Praedium Anti Michigan</p>
+          <hr class="my-6">
+          <p><strong>Case ID:</strong> ${id}</p>
+          <p><strong>Effective Date:</strong> ${eff}</p>
+          <h4 class="font-display text-xl mt-6">Findings</h4>
+          <p class="mt-2">${findings}</p>
+          <h4 class="font-display text-xl mt-6">Orders</h4>
+          <p class="mt-2">${orders}</p>
+          <div class="mt-8 p-4 border border-black/20 rounded">
+            <p><strong>Verification Hash (SHA-256):</strong> <code>${hash}</code></p>
+            <p class="text-xs mt-2">This decree may be verified against the docketed case record.</p>
+          </div>
+          <div class="mt-12 flex justify-between">
+            <div>_________________________<br>Presiding Consul</div>
+            <div>Date: ${eff}</div>
+          </div>
+        </div>`;
+      const prev=$('#decreePreview'); prev.innerHTML=html; prev.classList.remove('hidden'); prev.scrollIntoView({behavior:'smooth'});
+    });
+
+    // ---- Verify
+    $('#verifyBtn')?.addEventListener('click', ()=>{
+      const v=$('#verifyInput').value.trim();
+      const el=$('#verifyResult');
+      try{
+        const payload=JSON.parse(v);
+        const match=store.load().find(c=>c.caseId===payload.id && c.hashHex===payload.hash);
+        el.innerHTML = match
+          ? `<div class="rounded-xl p-4 bg-green-600/20 border border-green-400">Verified ✔ — ${payload.id}</div>`
+          : `<div class="rounded-xl p-4 bg-red-600/20 border border-red-400">Mismatch ✖ — Not found / hash mismatch</div>`;
+      }catch{
+        el.innerHTML = `<div class="rounded-xl p-4 bg-red-600/20 border border-red-400">Invalid payload</div>`;
+      }
+    });
+    $('#verifyFile')?.addEventListener('change', async e=>{
+      const f=e.target.files?.[0]; if(!f) return;
+      $('#verifyInput').value=await f.text(); $('#verifyBtn').click();
+    });
+
+    // ---- Contacts & Admin
+    function renderContacts(){
+      const s=settings.load(); const list=s.contacts||[]; const wrap=$('#contactsList'); wrap.innerHTML='';
+      for(const [i,c] of list.entries()){
+        const card=document.createElement('div');
+        card.className='rounded-2xl bg-brand-ink border border-white/10 p-6 shadow-soft';
+        card.innerHTML=`
+          <div class="font-display text-xl mb-2">${c.label||'Contact'}</div>
+          <div class="text-white/70 whitespace-pre-wrap">${c.address||''}</div>
+          <div class="mt-4 flex gap-2">
+            <button class="px-3 py-2 rounded-lg bg-brand-blue text-white" data-i="${i}" data-act="edit">Edit</button>
+            <button class="px-3 py-2 rounded-lg border border-red-400 text-red-400" data-i="${i}" data-act="del">Delete</button>
+          </div>`;
+        wrap.appendChild(card);
+      }
+    }
+    $('#addContact')?.addEventListener('click', ()=>{
+      const s=settings.load(); s.contacts=s.contacts||[];
+      const label=prompt('Label'); const address=prompt('Address (multiline allowed)');
+      if(label){ s.contacts.push({label,address}); settings.save(s); renderContacts(); }
+    });
+    $('#contactsList')?.addEventListener('click', e=>{
+      const b=e.target.closest('button'); if(!b) return;
+      const i=+b.dataset.i; const s=settings.load();
+      if(b.dataset.act==='del'){ s.contacts.splice(i,1); settings.save(s); renderContacts(); }
+      if(b.dataset.act==='edit'){ const cur=s.contacts[i]||{};
+        const label=prompt('Label',cur.label||''); const address=prompt('Address',cur.address||'');
+        if(label!=null){ s.contacts[i]={label,address}; settings.save(s); renderContacts(); }
+      }
+    });
+
+    $('#saveAdmin')?.addEventListener('click', ()=>{
+      const s=settings.load();
+      s.adminPass=$('#adminPass').value||undefined;
+      s.hmac=$('#hmacSecret').value||undefined;
+      settings.save(s); alert('Saved.');
+    });
+    $('#clearAll')?.addEventListener('click', ()=>{
+      if(confirm('Clear all local data?')){ localStorage.clear(); location.reload(); }
+    });
+
+    // Footer year
+    $('#yr').textContent = new Date().getFullYear();
+
+    // Icons
+    feather.replace();
+  </script>
+</body>
+</html>
+
+

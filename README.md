@@ -3,7 +3,7 @@
   <img src="ampam-consular-court-seal.png" alt="Consular Court Seal" width="180" />
 </p>
 
-<h1 align="center">⚖️ Allodium Moroccan Praedium Anti Michigan ⚖️</h1>
+<h1 align="center">⚖️ Allodium Moroccan Praedium Ante Michigan ⚖️</h1>
 <h3 align="center">AMPAM Consular Court – De Jure Consular Jurisdiction</h3>
 
 ---

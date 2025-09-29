@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMPAM Consular Court – De Jure Consular Jurisdiction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            black: '#0B0B0B',
+                            ink: '#111111',
+                            gold: '#CFAE2C',
+                            blue: '#0A3D91',
+                            white: '#FFFFFF',
+                        },
+                    },
+                    fontFamily: {
+                        display: ['Cinzel', 'serif'],
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+    <style>
+        :root {
+            --primary: #0B0B0B;
+            --secondary: #CFAE2C;
+            --bg: #0A3D91;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--primary);
+            color: white;
+        }
+        .font-display {
+            font-family: 'Cinzel', serif;
+        }
+        [aria-current="page"] {
+            border-bottom: 2px solid var(--secondary);
+        }
+.vanta-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.2;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <div id="vanta-bg" class="vanta-bg"></div>
+    <!-- Navigation -->
+    <header class="bg-brand-black shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="py-4 text-center">
+                <h1 class="font-display text-3xl md:text-4xl font-bold text-brand-gold">
+                    Allodium Moroccan Praedium Anti Michigan
+                </h1>
+                <p class="text-brand-white text-sm mt-1">AMPAM Consular Court – De Jure Consular Jurisdiction</p>
+            </div>
+            <nav class="border-t border-brand-ink">
+                <div class="flex overflow-x-auto">
+                    <Link href="/" className="px-4 py-3 text-brand-white hover:text-brand-gold transition whitespace-nowrap">Home</Link>
+                    <Link href="/docket" className="px-4 py-3 text-brand-white hover:text-brand-gold transition whitespace-nowrap">Docket</Link>
+                    <Link href="/cases/new" className="px-4 py-3 text-brand-white hover:text-brand-gold transition whitespace-nowrap">File Case</Link>
+                    <Link href="/decrees/new" className="px-4 py-3 text-brand-white hover:text-brand-gold transition whitespace-nowrap">Issue Decree</Link>
+                    <Link href="/verify" className="px-4 py-3 text-brand-white hover:text-brand-gold transition whitespace-nowrap">Verify</Link>
+                    <Link href="/treaties" className="px-4 py-3 text-brand-white hover:text-brand-gold transition whitespace-nowrap">Treaties</Link>
+                    <Link href="/contacts" className="px-4 py-3 text-brand-white hover:text-brand-gold transition whitespace-nowrap">Contacts</Link>
+                    <Link href="/admin" className="px-4 py-3 text-brand-white hover:text-brand-gold transition whitespace-nowrap">Admin</Link>
+                </div>
+            </nav>
+</div>
+    </header>
+    <!-- Hero Section -->
+    <section class="relative bg-brand-black text-white py-20">
+        <div class="absolute inset-0 bg-brand-black opacity-90"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="mt-4 flex items-center justify-center gap-4">
+                <img src="https://huggingface.co/spaces/AmpamMofaRayel/consular-caseflow-nexus/resolve/main/images/AMPAM%20SEAL.png" alt="AMPAM Seal" class="h-14 w-14 rounded-full ring-2 ring-brand-gold/60 shadow-soft object-contain">
+                <img src="https://huggingface.co/spaces/AmpamMofaRayel/consular-caseflow-nexus/resolve/main/images/AMPAM%20CONSULAR%20COURT%20SEAL.png" alt="AMPAM Consular Court Seal" class="h-14 w-14 rounded-full ring-2 ring-brand-gold/60 shadow-soft object-contain">
+</div>
+            <div class="relative overflow-hidden rounded-2xl border border-white/10 mt-6">
+                <img src="https://huggingface.co/spaces/AmpamMofaRayel/consular-caseflow-nexus/resolve/main/images/AMPAM%20CONSULAR%20COURT%20SEAL.png" alt="" aria-hidden="true"
+                     class="absolute inset-0 w-full h-full object-cover opacity-10">
+<div class="relative p-10 sm:p-14">
+                    <div class="max-w-3xl mx-auto text-center">
+<h2 class="font-display text-4xl md:text-5xl font-bold mb-6">Consular Jurisdiction & Sovereignty</h2>
+                <p class="text-xl mb-8">Exercising de jure authority under international treaty law and common law principles</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#/file" class="bg-brand-blue hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-medium transition">
+                        File a Case
+                    </a>
+                    <a href="#/verify" class="border border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-brand-black px-6 py-3 rounded-lg font-medium transition">
+                        Verify Document
+                    </a>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <img src="https://huggingface.co/spaces/AmpamMofaRayel/consular-caseflow-nexus/resolve/main/images/AMPAM%20CONSULAR%20COURT%20SEAL.png" alt="Court Seal Background" class="absolute inset-0 w-full h-full object-cover opacity-20">
+</section>
+<main class="container mx-auto px-4 py-8" id="app">
+        <!-- Router will load content here -->
+    </main>
+<!-- Features -->
+    <section class="py-16 bg-white bg-opacity-70 backdrop-blur-sm">
+        <div class="container mx-auto px-4">
+            <h2 class="font-serif text-3xl text-center text-[var(--primary)] mb-12">Court Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-[var(--bg)] p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="w-12 h-12 bg-[var(--secondary)] bg-opacity-20 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="file-text" class="text-[var(--secondary)]"></i>
+                    </div>
+                <h3 class="font-serif text-xl font-semibold mb-2 text-white">Case Management</h3>
+                <p class="text-white/90">File, track, and manage all consular court matters in a secure digital registry.</p>
+</div>
+                <div class="bg-[var(--bg)] p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="w-12 h-12 bg-[var(--secondary)] bg-opacity-20 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="shield" class="text-[var(--secondary)]"></i>
+                    </div>
+                <h3 class="font-serif text-xl font-semibold mb-2 text-white">Document Verification</h3>
+                <p class="text-white/90">Cryptographically verify the authenticity of any court document or decree.</p>
+</div>
+                <div class="bg-[var(--bg)] p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="w-12 h-12 bg-[var(--secondary)] bg-opacity-20 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="award" class="text-[var(--secondary)]"></i>
+                    </div>
+                <h3 class="font-serif text-xl font-semibold mb-2 text-white">Decree Issuance</h3>
+                <p class="text-white/90">Generate official decrees with embedded verification codes and QR signatures.</p>
+</div>
+            </div>
+        </div>
+    </section>
+    <!-- Recent Cases -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="font-serif text-3xl text-center text-[var(--primary)] mb-12">Recent Cases</h2>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden relative">
+                <img src="https://huggingface.co/spaces/AmpamMofaRayel/consular-caseflow-nexus/resolve/main/images/AMPAM%20SEAL.png" alt="AMPAM Seal Texture"
+class="absolute inset-0 w-full h-full object-cover opacity-5">
+<div class="grid grid-cols-12 bg-gray-50 p-4 font-medium text-sm text-gray-500">
+                    <div class="col-span-2">Case ID</div>
+                    <div class="col-span-4">Title</div>
+                    <div class="col-span-2">Type</div>
+                    <div class="col-span-2">Status</div>
+                    <div class="col-span-2">Filed</div>
+                </div>
+                <div class="divide-y divide-gray-100">
+                    <!-- Case 1 -->
+                    <div class="grid grid-cols-12 p-4 hover:bg-gray-50 transition">
+                        <div class="col-span-2 font-mono text-sm text-[var(--primary)]">AMPAM-CC-20230615-0042</div>
+                        <div class="col-span-4">Notice of Lien - Smith Estate</div>
+                        <div class="col-span-2">Lien</div>
+                        <div class="col-span-2">
+                            <span class="px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full">Closed</span>
+                        </div>
+                        <div class="col-span-2 text-sm text-gray-500">15 Jun 2023</div>
+                    </div>
+                    <!-- Case 2 -->
+                    <div class="grid grid-cols-12 p-4 hover:bg-gray-50 transition">
+                        <div class="col-span-2 font-mono text-sm text-[var(--primary)]">AMPAM-CC-20230618-0043</div>
+                        <div class="col-span-4">Treaty Enforcement Request</div>
+                        <div class="col-span-2">Treaty</div>
+                        <div class="col-span-2">
+                            <span class="px-2 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Open</span>
+                        </div>
+                        <div class="col-span-2 text-sm text-gray-500">18 Jun 2023</div>
+                    </div>
+                    <!-- Case 3 -->
+                    <div class="grid grid-cols-12 p-4 hover:bg-gray-50 transition">
+                        <div class="col-span-2 font-mono text-sm text-[var(--primary)]">AMPAM-CC-20230620-0044</div>
+                        <div class="col-span-4">Affidavit of Status</div>
+                        <div class="col-span-2">Affidavit</div>
+                        <div class="col-span-2">
+                            <span class="px-2 py-1 bg-yellow-100 text-yellow-800 text-xs rounded-full">Pending</span>
+                        </div>
+                        <div class="col-span-2 text-sm text-gray-500">20 Jun 2023</div>
+                    </div>
+                </div>
+                <div class="p-4 border-t border-gray-100 text-center">
+                    <a href="#" class="text-[var(--primary)] hover:text-[var(--secondary)] transition font-medium">
+                        View Full Docket →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Verification Tool -->
+    <section class="py-16 bg-[var(--primary)] text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto relative">
+                <img src="https://huggingface.co/spaces/AmpamMofaRayel/consular-caseflow-nexus/resolve/main/images/AMPAM%20SEAL.png" alt="AMPAM Seal"
+class="absolute inset-0 w-full h-full object-cover opacity-10">
+<h2 class="font-serif text-3xl text-center mb-6">Document Verification</h2>
+                <p class="text-center mb-8 text-white">
+                    Verify the authenticity of any consular court document by scanning its QR code or entering the verification payload.
+                </p>
+<div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-6">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="flex-1">
+                            <label class="block text-sm font-medium mb-2 text-white">Verification Payload</label>
+<textarea class="w-full bg-white bg-opacity-10 border border-white border-opacity-20 rounded-lg p-3 text-white placeholder-white" rows="4" placeholder="Paste verification payload or scan QR code"></textarea>
+</div>
+                        <div class="flex flex-col items-center justify-center">
+                            <div class="w-32 h-32 bg-white rounded-lg flex items-center justify-center mb-4">
+                                <i data-feather="camera" class="text-[var(--primary)]"></i>
+                            </div>
+                            <button class="bg-[var(--secondary)] hover:bg-opacity-90 text-[var(--primary)] px-4 py-2 rounded-lg transition font-medium text-white">
+                                Scan QR
+                            </button>
+</div>
+                    </div>
+                    <div class="mt-6 text-center">
+                        <button class="bg-[var(--secondary)] hover:bg-opacity-90 text-white px-6 py-3 rounded-lg transition font-medium">
+                            Verify Document
+                        </button>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="mt-auto bg-[var(--primary)] text-white py-8 relative">
+        <img src="https://huggingface.co/spaces/AmpamMofaRayel/consular-caseflow-nexus/resolve/main/images/AMPAM%20CONSULAR%20COURT%20SEAL.png" alt="Court Seal Background"
+class="absolute inset-0 w-full h-full object-cover opacity-5">
+        <div class="container mx-auto px-4 relative">
+<div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-serif text-lg font-semibold mb-4">AMPAM Consular Court</h3>
+                    <p class="text-sm opacity-80">
+                        De Jure Consular Jurisdiction established under international treaty law and common law principles.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-serif text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-sm opacity-80 hover:opacity-100 hover:text-[var(--secondary)] transition">Docket Search</a></li>
+                        <li><a href="#" class="text-sm opacity-80 hover:opacity-100 hover:text-[var(--secondary)] transition">File a Case</a></li>
+                        <li><a href="#" class="text-sm opacity-80 hover:opacity-100 hover:text-[var(--secondary)] transition">Treaty Library</a></li>
+                        <li><a href="#" class="text-sm opacity-80 hover:opacity-100 hover:text-[var(--secondary)] transition">Contact Consuls</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-serif text-lg font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-sm opacity-80">
+                            <i data-feather="mail" class="mr-2 w-4 h-4"></i> registry@ampam-cc.org
+                        </li>
+                        <li class="flex items-center text-sm opacity-80">
+                            <i data-feather="globe" class="mr-2 w-4 h-4"></i> ampam-cc.org
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white border-opacity-20 mt-8 pt-6 text-sm text-center opacity-70">
+                © 2023 AMPAM Consular Court. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
